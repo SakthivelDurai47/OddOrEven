@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODD OR EVEN</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <audio id="clickSound" src="buttons.mp3" preload="auto"></audio>
+      <audio id="winSound" src="winsound.mp3" preload="auto"></audio>
+      <audio id="loseSound" src="losesound.mp3" preload="auto"></audio>
+      <div id="stage">
+        <h1 id="title">
+          🎮Odd or Even🎮 <br />
+          <span id="name">(Hand Cricket🏏)</span>
+        </h1>
+        <p id="info">
+          Choose either odd or even!<br />
+          Click on help to learn how to play the game 😄
+        </p>
+        <button id="oddOReven" onclick="gameOption(this.value)" value="0">
+          Odd
+        </button>
+        <button id="oddOReven" onclick="gameOption(this.value)" value="1">
+          Even
+        </button>
+        <button id="help" onclick="howto()">Help</button>
+      </div>
+      <div id="mode">
+        <p>You won the toss! Choose your opening🤔</p>
+        <button id="bat">Batting🏏</button>
+        <button id="bowl">Bowling🤾</button>
+      </div>
+      <div id="game">
+        <h1 id="innings"></h1>
+        <p>Round: <span id="round">One</span></p>
+        <div id="scores">
+          <p>Your Score: <span id="playerScore">0</span></p>
+          <p>Computer Score: <span id="computerScore">0</span></p>
+        </div>
+        <div id="choiceDisplay">
+          <p>Your choice: <span id="playerCh"></span></p>
+          <p>Computer choice: <span id="computerCh"></span></p>
+        </div>
+        <p id="gameStat"></p>
+        <button id="option" onclick="buttonOption(this.value)" value="0">
+          0
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="1">
+          1
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="2">
+          2
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="3">
+          3
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="4">
+          4
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="5">
+          5
+        </button>
+        <button id="option" onclick="buttonOption(this.value)" value="6">
+          6
+        </button>
+        <br />
+        <button onclick="endGame()">End game</button>
+      </div>
+      <div id="resultPage">
+        <h1 id="result"></h1>
+        <p>Your Score: <span id="plrScore">0</span></p>
+        <p>Computer Score: <span id="comScore">0</span></p>
+        <button onclick="endGame()">Replay!</button>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Made by Sakthivel Durai S <br />
+        Sounds by Suresh Athithya I
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

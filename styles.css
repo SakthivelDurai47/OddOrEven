@@ -1,0 +1,84 @@
+#game {
+  display: none;
+}
+#mode {
+  display: none;
+}
+#resultPage {
+  display: none;
+}
+
+body {
+  text-align: center;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  background-color: hsla(0, 0%, 0%, 0.361);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  margin: auto;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 7px 7px 15px rgb(0, 0, 0);
+  margin-top: 10px;
+  border: 1px solid black;
+}
+button {
+  font-size: 1.05em;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #222831c8;
+  color: #eeeeee;
+  margin: 5px;
+}
+#gameStat {
+  border: 1px solid black;
+  backdrop-filter: blur(15px);
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+}
+button:hover {
+  background-color: #eeeeeecc;
+  color: #222831;
+}
+#name {
+  font-size: large;
+}
+
+#title {
+  margin-bottom: 40px;
+  color: white;
+}
+p {
+  font-weight: bold;
+  margin: 20px;
+}
+#scores {
+  color: #4c03c0dc;
+}
+#choiceDisplay {
+  color: #eeeeee;
+}
+#resultPage {
+  color: white;
+}
+#result {
+  color: black;
+}
+footer {
+  color: black;
+  font-weight: 100;
+  font-size: small;
+  position: absolute;
+  bottom: 3px;
+  margin-left: -10px;
+}
