@@ -80,11 +80,11 @@ function gameChoice() {
   if (computerChoice == 0) {
     gameOpt = 2;
     gameStat.innerText = "The computer won the Toss and Choosed Batting first";
-    innings.innerText = "Bowling🤾";
+    innings.innerText = "You are Bowling🤾";
   } else {
     gameOpt = 1;
     gameStat.innerText = "The computer won the Toss and Choosed Bowling first";
-    innings.innerText = "Batting🏏";
+    innings.innerText = "You are Batting🏏";
   }
 }
 function buttonOption(value) {
