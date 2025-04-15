@@ -51,8 +51,8 @@ function howto() {
 
 function gameOption(opt) {
   playClickSound();
-  let choice = Number(opt);
-  computerChoice = Math.round(Math.random() * 6);
+  let choice = Number(opt); 
+  computerChoice = Math.floor(Math.random() * 7);
   if (choice == 0) {
     if (computerChoice % 2 != 0) {
       stage.style.display = "none";
